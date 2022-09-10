@@ -1,2 +1,2 @@
-# newsapp
+# NewsApp
 Breaking News
