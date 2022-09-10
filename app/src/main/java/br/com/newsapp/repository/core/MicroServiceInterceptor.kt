@@ -14,7 +14,7 @@ class MicroServiceInterceptor(private val context: Context) : Interceptor {
         val requestBuilder = request.newBuilder()
             .header("Cache-Control", "no-cache")
             .header("Content-Type" , "application/json; charset=UTF-8")
-            .header("Api-Token"    , context.getString(R.string.API_TOKEN))
+            .header("X-Api-Key"    , context.getString(R.string.API_TOKEN))
 
         request = requestBuilder.build()
         return chain.proceed(request)

@@ -4,12 +4,12 @@ plugins {
 }
 
 android {
-    compileSdk 32
+    compileSdk 33
 
     defaultConfig {
         applicationId "br.com.newsapp"
         minSdk 21
-        targetSdk 32
+        targetSdk 33
         versionCode 100
         versionName "1.0.0"
         multiDexEnabled true
@@ -27,12 +27,14 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
 
             resValue "string", "API_TOKEN", "2f502a585b454998a385ad40c868e4d9"
+            resValue "string", "API_URL"  , "https://newsapi.org"
         }
         debug {
             debuggable true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
 
             resValue "string", "API_TOKEN", "2f502a585b454998a385ad40c868e4d9"
+            resValue "string", "API_URL"  , "https://newsapi.org"
         }
     }
     compileOptions {
@@ -75,6 +77,10 @@ dependencies {
     // OkHttp
     implementation "com.squareup.okhttp3:okhttp:$okhttp_version"
     implementation "com.squareup.okhttp3:logging-interceptor:$okhttp_version"
+
+    // Koin
+    implementation "io.insert-koin:koin-android:$koin_version"
+    implementation "io.insert-koin:koin-androidx-workmanager:$koin_version"
 
     // Test
     testImplementation 'junit:junit:4.13.2'
