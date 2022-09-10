@@ -3,6 +3,7 @@ package br.com.newsapp.repository.core
 import java.io.File
 
 import android.content.Context
+
 import okhttp3.Cache
 import okhttp3.OkHttpClient
 
