@@ -25,6 +25,14 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+
+            resValue "string", "API_TOKEN", "2f502a585b454998a385ad40c868e4d9"
+        }
+        debug {
+            debuggable true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+
+            resValue "string", "API_TOKEN", "2f502a585b454998a385ad40c868e4d9"
         }
     }
     compileOptions {
