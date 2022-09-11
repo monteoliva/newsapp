@@ -20,5 +20,5 @@ val networkModule = module {
 
     factory { OkHttp3(get(), androidContext()) }
     factory { MicroServiceInterceptor(androidContext()) }
-    factory { RepositoryServer(androidContext(), get()) }
+    factory { RepositoryServer(get()) }
 }
