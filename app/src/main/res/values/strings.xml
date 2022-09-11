@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">NewsApp</string>
+    <string name="progress_wait">Aguarde&#8230;</string>
+    <string name="app_exit">Deseja mesmo sair?</string>
+    <string name="btn_cancel">CANCELAR</string>
+    <string name="btn_ok">OK</string>
+    <string name="btn_exit">SAIR</string>
+    <string name="btn_close">FECHAR</string>
 </resources>
