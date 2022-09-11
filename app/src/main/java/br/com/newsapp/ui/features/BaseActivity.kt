@@ -79,7 +79,7 @@ abstract class BaseActivity : AppCompatActivity() {
     }
 
     fun boxMsg(@StringRes msg: Int, callback: () -> Unit) { boxMsg(getString(msg)) { callback.invoke() }  }
-    private fun boxMsg(message: String, callback: () -> Unit) {
+    fun boxMsg(message: String, callback: () -> Unit) {
         setLoading(false)
         AlertDialog.Builder(this, R.style.AlertDialogTheme).apply {
             setCancelable(false)
